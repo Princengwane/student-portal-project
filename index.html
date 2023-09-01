@@ -1,0 +1,79 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Student Portal</title>
+</head>
+<body>
+    <header>
+        <h1>Student Portal</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/register">Register</a></li>
+            <li><a href="/enroll">Enroll</a></li>
+            <li><a href="/grades">Grades</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!-- Content will be dynamically loaded here based on navigation -->
+    </main>
+</body>
+</html>
+
+<!-- register.html -->
+<h2>Student Registration</h2>
+<form>
+    <!-- Input fields for student registration -->
+    <input type="text" name="first_name" placeholder="First Name">
+    <input type="text" name="last_name" placeholder="Last Name">
+    <input type="email" name="email" placeholder="Email">
+    <!-- Add more fields as needed -->
+    <button type="submit">Register</button>
+</form>
+
+<!-- enroll.html -->
+<h2>Course Enrollment</h2>
+<form>
+    <!-- Display student and course information -->
+    <label for="student">Student:</label>
+    <select id="student" name="student">
+        <option value="1">John Doe</option>
+        <option value="2">Jane Smith</option>
+        <!-- Add more student options -->
+    </select>
+    <!-- Checkboxes or dropdowns for course selection -->
+    <label for="courses">Select Courses:</label>
+    <div id="courses" class="checkbox-group">
+        <label><input type="checkbox" name="course" value="101">Course 101</label>
+        <label><input type="checkbox" name="course" value="102">Course 102</label>
+        <label><input type="checkbox" name="course" value="103">Course 103</label>
+        <!-- Add more course options -->
+        </div>
+    <!-- Add more fields as needed -->
+    <button type="submit">Enroll</button>
+</form>
+
+<!-- grades.html -->
+<h2>Submit Grades</h2>
+<form>
+    <!-- Display enrollment and grade information -->
+    <label for="enrollment">Enrollment:</label>
+    <select id="enrollment" name="enrollment">
+        <option value="1">John Doe - Course 101</option>
+        <option value="2">Jane Smith - Course 102</option>
+        <!-- Add more enrollment options -->
+    </select>
+
+    <label for="grade">Grade:</label>
+    <input type="text" id="grade" name="grade" placeholder="Enter grade">
+
+    <!-- Add more fields as needed -->
+    <!-- Input field for grade submission -->
+    <!-- Add more fields as needed -->
+    <button type="submit">Submit Grade</button>
+</form>
